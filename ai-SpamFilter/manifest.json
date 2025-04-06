@@ -2,7 +2,6 @@
     "name": "Test_1",
     "version": "1.0.0",
     "description": "Contributor",
-    "componentPath": "http://localhost:5000/plugins/Test_1/main.js"
-
+    "componentPath": "http://localhost:5000/plugins/ai-SpamFilter/main.js"
 }
   
