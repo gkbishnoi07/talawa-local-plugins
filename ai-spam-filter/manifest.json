@@ -1,0 +1,7 @@
+{
+    "name": "AI SPAM Filter",
+    "description": "Filters spam messages using AI",
+    "route": "/ai/spam-filter",
+    "entry": "https://raw.githubusercontent.com/your-org/Talawa-Plugins/main/ai-spam-filter/main.js"
+  }
+  

@@ -1,6 +1,0 @@
-{
-    "name": "Hello Plugin",
-    "description": "Demo plugin that shows Hello from plugin",
-    "entry": "main.js",
-    "version": "1.0.0"
-  }
