@@ -1,13 +1,7 @@
 {
-    "name": "hello-plugin",
-    "description": "A simple Hello World plugin",
+    "name": "Hello Plugin",
+    "description": "Demo plugin that shows Hello from plugin",
     "version": "1.0.0",
-    "componentUrl": "https://raw.githubusercontent.com/gkbishnoi07/talawa-local-plugins/main/hello-plugin/main.js",
-    "routes": [
-      {
-        "path": "/hello",
-        "component": "HelloPlugin"
-      }
-    ]
+    "entry": "main.js"
   }
   
