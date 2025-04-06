@@ -1,7 +1,0 @@
-{
-    "name": "AI SPAM Filter",
-    "description": "Filters spam messages using AI",
-    "route": "/ai/spam-filter",
-    "componentPath": "http://localhost:5000/plugins/ai-spam-filter/main.js"
-  }
-  
