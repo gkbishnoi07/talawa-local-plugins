@@ -1,7 +1,8 @@
 {
     "name": "chatbot",
-    "version": "1.0.0",
-    "description": "Contributor",
-    "componentUrl": "https://gkbishnoi07.github.io/talawa-local-plugins/chatbot/index.html"
+     "version": "1.0.0",
+     "description": "Contributor",
+     "main": "main.js",
+     "componentUrl": "https://raw.githubusercontent.com/gkbishnoi07/talawa-local-plugins/main/chatbot/main.js"
   }
   
