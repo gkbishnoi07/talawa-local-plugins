@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
@@ -8,7 +9,7 @@ const ChatBot = () => {
   const sendMessage = async () => {
     setLoading(true);
     const userMessage = { sender: 'user', text: input };
-    setMessages([...messages, userMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInput('');
 
     try {
@@ -26,9 +27,9 @@ const ChatBot = () => {
 
       const data = await response.json();
       const botMessage = { sender: 'bot', text: data.choices[0].message.content };
-      setMessages(prev => [...prev, botMessage]);
+      setMessages((prev) => [...prev, botMessage]);
     } catch (err) {
-      setMessages(prev => [...prev, { sender: 'bot', text: 'Sorry, something went wrong.' }]);
+      setMessages((prev) => [...prev, { sender: 'bot', text: 'Sorry, something went wrong.' }]);
     } finally {
       setLoading(false);
     }
@@ -57,4 +58,6 @@ const ChatBot = () => {
   );
 };
 
-export default ChatBot;
+// 👇 This renders the ChatBot into the iframe body
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<ChatBot />);
